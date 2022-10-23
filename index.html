@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Trabalho Final</title>
 </head>
 <body>
     <header>
-        <nav>
-            
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="collapse navbar-collapse" id="barraNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#sneakers">Maquinas</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contato">Biqueiras</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contato">Tintas</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contato">Agulhas</a></li>
+                </ul>
+          
+                <div class="d-flex align-items-center">
+                  <!-- cart -->
+                  <a class="text-reset me-3" href="#modalJordan" data-mdb-toggle="modal" data-mdb-target="#modalCart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </a>
+          
+                  <!-- Notifications -->
+                  <div class="dropdown">
+                    <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" data-mdb-toggle="dropdown">
+                      <i class="fas fa-bell"></i>
+                      <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                    </a>
+                  </div>
+                  <!-- Avatar -->
+                  <div class="dropdown">
+                    <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" data-mdb-toggle="dropdown">
+                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25"
+                        alt="Avatar" />
+                    </a>
+                  </div>
+                </div>
+              </div>
         </nav>
     </header>
     
