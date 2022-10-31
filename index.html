@@ -39,8 +39,19 @@
 
         <main>
             <section id="#Maquinas">
-                <h1>Maquinas</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error veritatis odit expedita voluptas architecto quidem temporibus voluptatum accusantium debitis deserunt consequatur tempora quo atque fuga doloremque, dolorum itaque reprehenderit?</p>
+                <div class="container">
+                    <h1>Maquinas</h1>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Nome da Maq</h2>
+                                <img src="img/Maquina1.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id="#Biqueira">
                 <h1>Biqueiras</h1>
@@ -55,5 +66,11 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error veritatis odit expedita voluptas architecto quidem temporibus voluptatum accusantium debitis deserunt consequatur tempora quo atque fuga doloremque, dolorum itaque reprehenderit?</p>
             </section>
         </main>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>      
     </body>
 </html>
