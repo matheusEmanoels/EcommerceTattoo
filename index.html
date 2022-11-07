@@ -10,42 +10,74 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Trabalho Final</title>
 </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <div class="collapse navbar-collapse" id="barraNav">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Maquinas">Maquinas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Biqueiras">Biqueiras</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Tintas">Tintas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Agulhas">Agulhas</a></li>
-                    </ul>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand mx-2 mt-lg-0" href="#">
+                <span>
+                    <img src="img/logo.jpg" class="rounded-circle" height="30"
+                    alt="Avatar" />
+                    Buy4Tattoo
+                </span>
+                </a>
             
-                    <div class="d-flex align-items-center">
-                        <!-- cart -->
-                        <a class="text-reset nav-link dropdown-toggle hidden-arrow" href="#" data-mdb-toggle="modal" data-mdb-target="#modalCart">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-                
-                        <!-- Notifications -->
-                        <div>
-                            <li class="nav-item"><a class="login-li" href="#" data-mdb-toggle="modal" data-mdb-target="#modalCart">Entrar/Cadastrar-se</a></li>
-                        </div>
+            <div class="collapse navbar-collapse" id="barraNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Maquinas">Maquinas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Biqueira">Biqueiras</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Tinta">Tintas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Agulha">Agulhas</a></li>
+                </ul>
+        
+                <div class="d-flex align-items-center">
+                    <!-- cart -->
+                    <a class="text-reset nav-link dropdown-toggle hidden-arrow" href="#" data-mdb-toggle="modal" data-mdb-target="#modalCart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+            
+                    <!-- Notifications -->
+                    <div>
+                        <a class="login-li" href="#" data-mdb-toggle="modal" data-mdb-target="#modalCart">Entrar/Cadastrar-se</a>
                     </div>
                 </div>
-            </nav>
-        </header>
-
+            </div>
+        </nav>
+    </header>
+    <body>
         <main>
-            <section id="#Maquinas">
+            <section id="Maquinas">
                 <div class="container">
                     <h1>Maquinas</h1>
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="d-flex col-lg-3 col-md-6 col-sm-12">
                             <div class="card_box" data-aos="fade-right" data-aos-delay="200">
-                                <h2>Nome da Maq</h2>
-                                <img src="img/Maquina1.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <h2>Máquina Rotativa Aston Pen Folon</h2>
+                                <a href="Produto.html"> <img src="img/Maquina1.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1"></a>
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Máquina Rotativa Direct X-13 POP - Híbrida</h2>
+                                <img src="img/Maquina2.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Máquina Lauro Paolini Nano Shape Alumínio</h2>
+                                <img src="img/Maquina3.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Máquina Rotativa Direct XCore - Híbrida</h2>
+                                <img src="img/Maquina4.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Máquina Rotativa Titan - Lauro Paolini</h2>
+                                <img src="img/Maquina5.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
                                 <span class="price"><b>R$</b>1000</span>
                                 <button type="button" data-mdb-toggle="modal">Comprar</button>
                             </div>
@@ -53,20 +85,155 @@
                     </div>
                 </div>
             </section>
-            <section id="#Biqueira">
-                <h1>Biqueiras</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error veritatis odit expedita voluptas architecto quidem temporibus voluptatum accusantium debitis deserunt consequatur tempora quo atque fuga doloremque, dolorum itaque reprehenderit?</p>
+            <section id="Biqueira">
+                <div class="container">
+                    <h1>Biqueiras</h1>
+                    <div class="row">
+                        <div class="d-flex col-lg-3 col-md-6 col-sm-12">
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Biqueira Descartável Sem Agulha Reilly Tattoo 30mm - Pintura Magnum 11 - Unidade</h2>
+                                <img src="img/BiqueiraTattoo1.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Biqueira Descartável Sem Agulha Reilly Tattoo 30mm - Pintura Magnum 09 - Pacote com 20 Unidades</h2>
+                                <img src="img/BiqueiraTattoo2.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Biqueira Descartável Sem Agulha Finder Tattoo 30mm - Traço/ Bucha 03 - Pacote com 20 Unidades</h2>
+                                <img src="img/BiqueiraTattoo3.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Biqueira Descartável Sem Agulha Finder Tattoo 30mm - Traço/ Bucha 13 a 15 - Unidade</h2>
+                                <img src="img/BiqueiraTattoo4.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Biqueira Descartável Sem Agulha White Head Premium - 30mm - Pintura Magnum 13 - Unidade</h2>
+                                <img src="img/BiqueiraTattoo5.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section id="#Tinta">
-                <h1>Tintas</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error veritatis odit expedita voluptas architecto quidem temporibus voluptatum accusantium debitis deserunt consequatur tempora quo atque fuga doloremque, dolorum itaque reprehenderit?</p>
+            <section id="Tinta">
+                <div class="container">
+                    <h1>Tintas</h1>
+                    <div class="row">
+                        <div class="d-flex col-lg-3 col-md-6 col-sm-12">
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Tinta Viper Ink Black</h2>
+                                <img src="img/TintaTattoo1.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Tinta Iron Works Green</h2>
+                                <img src="img/TintaTattoo2.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Solvente Iron Works</h2>
+                                <img src="img/TintaTattoo3.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Tinta Easy Glow Bear Purple</h2>
+                                <img src="img/TintaTattoo4.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Tinta Easy Glow Bear Green</h2>
+                                <img src="img/TintaTattoo5.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section id="#Agulha">
-                <h1>Agulhas</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error veritatis odit expedita voluptas architecto quidem temporibus voluptatum accusantium debitis deserunt consequatur tempora quo atque fuga doloremque, dolorum itaque reprehenderit?</p>
+            <section id="Agulha">
+                <div class="container">
+                    <h1>Agulhas</h1>
+                    <div class="row">
+                        <div class="d-flex col-lg-3 col-md-6 col-sm-12">
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Agulha TH PRO Soldada e Esterilizada - Pintura Magnum 13 - Unidade</h2>
+                                <img src="img/AgulhasTattoo.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Agulha WHITE HEAD Soldada e Esterilizada Pintura Magnum - 21 - Pontas - 30 Unidades</h2>
+                                <img src="img/AgulhasTattoo2.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Agulha Aston Soldada e Esterilizada - Traço 3 - 50 Unidades</h2>
+                                <img src="img/AgulhasTattoo3.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Agulha BLACK LINE Gold Soldada e Esterilizada Pintura Magnum 13 Pontas - 50 Unidades</h2>
+                                <img src="img/AgulhasTattoo4.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                            <div class="card_box" data-aos="fade-right" data-aos-delay="200">
+                                <h2>Agulha BLACK LINE Gold Soldada e Esterilizada Traço - 9 Pontas - 0,30mm - Unidade</h2>
+                                <img src="img/AgulhasTattoo5.jpg" data-aos="fade-right" data-aos-delay="200" alt="Maquina1">
+                                <span class="price"><b>R$</b>1000</span>
+                                <button type="button" data-mdb-toggle="modal">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
-
+        <footer>
+            <div class="container">
+              <div class="row ">
+                <div class="col-6">
+                  <h5>Lorem Ipsum</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed reiciendis earum molestias voluptates eius placeat eligendi optio, autem dolor sequi asperiores? Aliquam minima officiis nisi harum sequi repellat reiciendis?</p>
+                </div> 
+                <div class="col-2">
+                  <h4>Links Úteis</h4>
+                  <ul>
+                    <a href="#"><li>Política de privacidade</li></a>
+                    <a href="#"><li>Suporte</li></a>
+                  </ul>
+                </div> 
+                <div class="col-2">
+                </div> 
+                <div class="col-2">
+                  <h4>Contato</h4>
+                  <p>Rua das flores <br> Pato Branco <br> Paraná</p>
+                  <p><strong>Telefone: </strong>(46) 9 9999-9999</p>
+                  <p><strong>E-mail: </strong>buy4tattoo@buy4tattoo.com</p>
+                  <p></p>
+                </div> 
+              </div>
+            </div>
+            <div class="copyright">
+              <div class="d-flex justify-content-center">
+                <p>Copyright © 2022. Desenvolvido por Matheus Emanoel</p>
+              </div>
+            </div>
+          </footer>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
