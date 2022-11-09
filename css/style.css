@@ -59,11 +59,15 @@ section h1{
     width: 18rem;
 }
 
+
+
 .card_box b {
     font-size: 16px;
     font-weight: 600;
     padding-right: 6px;
 }
+
+
 
 .card_box ul{
     padding: 0;
@@ -106,4 +110,27 @@ footer p, footer a {
     margin-top: 15px;
     background: #f4f7fd;
     padding: 20px 0;
+}
+
+.tela_prod{
+    display: flex;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.tela_prod div{
+    
+}
+
+.card_box_prod{
+    width: 60%;
+    align-items: center;
+    background: white;
+    padding: 35px 30px;
+    border-radius: 6px;
+}
+
+.card_box_prod img{
+    height: 50rem;
+    width: 50rem;
 }
