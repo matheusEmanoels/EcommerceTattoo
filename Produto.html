@@ -45,17 +45,42 @@
 </header>
 <body>
     <main>
-        <div  class="tela_prod">
+        <div class="tela_prod">
             <div>
                 <div class="card_box_prod">
-                    <img src="img/Maquina1.jpg" alt="">
+                    <img class="big_img" src="img/Maquina1.jpg" alt="">
                 </div>
-    
+                <div class="d-flex mini_image">
+                  <button type="button"><img src="img/Maquina1.jpg" alt=""></button>
+                  <button type="button"><img src="img/ProdutoImg2.jpg" alt=""></button>
+                  <button type="button"><img src="img/ProdutoImg3.jpg" alt=""></button>
+                </div>
+
             </div>
-            <div>
+            <div class="description">
+              <div class="top_description">
                 <h2>Máquina Rotativa Aston Pen Folon</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate esse possimus repellat quaerat itaque magnam, nemo, sit aliquam aperiam cumque ea eaque nulla omnis et dolores eos libero doloribus laboriosam!</p>
+                <span class="price"><b>R$</b>1.000</span>
+              </div>
+             <div>
+                <div class="m-2">
+                  <h2>Frete</h2>
+                </div>
+                <div>
+                  <div class="mb-2">
+                    <input type="radio" name="tipo" id="gratis" value="gratis">
+                    <label for="gratis">Frete Gratis Entrega em até 20 dias</label>
+                  </div>
+                  <div class="mb-2">
+                    <input type="radio" name="tipo" id="express" value="express">
+                    <label for="express"><span><b>R$</b>50</span> - Frete Express Entrega em até 5 dias</label>
+                  </div>
+
+                </div>
+             </div>
             </div>
+
         </div>
     </main>
     <footer>

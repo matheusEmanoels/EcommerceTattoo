@@ -48,6 +48,7 @@ section h1{
     background-color: #f50a0a;
     opacity: .7;
 }
+
 .card_box span{
     font-size: 35px;
     font-weight: 700;
@@ -66,7 +67,6 @@ section h1{
     font-weight: 600;
     padding-right: 6px;
 }
-
 
 
 .card_box ul{
@@ -118,10 +118,6 @@ footer p, footer a {
     padding: 2rem;
 }
 
-.tela_prod div{
-    
-}
-
 .card_box_prod{
     width: 60%;
     align-items: center;
@@ -133,4 +129,31 @@ footer p, footer a {
 .card_box_prod img{
     height: 50rem;
     width: 50rem;
+}
+
+.mini_image{
+    align-content: center;
+}
+.mini_image img{
+    height: 5rem;
+    width: 5rem;
+}
+
+.description h2{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #1d0239;
+}
+
+.top_description span{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #00c96f;
+}
+
+.top_description b{
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 6px;
 }
