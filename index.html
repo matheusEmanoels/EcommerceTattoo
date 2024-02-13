@@ -32,13 +32,14 @@
         
                 <div class="d-flex align-items-center">
                     <!-- cart -->
-                    <a class="text-reset nav-link dropdown-toggle hidden-arrow" href="#" data-mdb-toggle="modal" data-mdb-target="#modalCart">
+                    <a class="text-reset nav-link dropdown-toggle hidden-arrow" href="#" data-mdb-toggle="modal" data-mdb-target="#">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
             
                     <!-- Notifications -->
                     <div>
-                        <a class="login-li" href="#" data-mdb-toggle="modal" data-mdb-target="#modalCart">Entrar/Cadastrar-se</a>
+                        <a class="login-li" href="#" data-mdb-toggle="modal" data-mdb-target="#modalCart">Entrar</a>
+                        <a class="login-li" href="#" data-mdb-toggle="modal" data-mdb-target="#modalCartCadastrar">Cadastra-se</a>
                     </div>
                 </div>
             </div>
@@ -202,6 +203,150 @@
                     </div>
                 </div>
             </section>
+            <!-- <div class="modal fade" id="modalCart">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Entrar</h5>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal"></button>
+                    </div>
+            
+                    <div class="modal-body">
+                        <div class="container w-75 mt-3">
+                            <div class="row card card-primary">
+                                <div class="card-header">
+                                    <h5 class="card-title float-start"></h5>
+                                    <small class="text-muted float-end">Campos
+                                        marcados com (*) são de preenchimento obrigatório</small>
+                                </div>
+                                <form id="formCadastro" action="#" method="post">
+                                     -------------------------nome-------------------------------- 
+                                     autenticacao  
+                                    <div id="autenticacao">
+                                        <fieldset>
+                                            <div class="tab-content">
+                                                <div class="row">
+                                                    <label class="col-12 col-md3 form-label" for="Email">E-mail*</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">@</span>
+                                                        <input type="email" name="email" id="email" class="email form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <label class="col-12 col-md3 form-label" for="Senha">Senha*</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                                        <input type="password" name="senha" id="password" class="password form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </fieldset>
+                                    </div>
+                                    -----------submit--------------- 
+                                    <div class="row my-3">
+                                        <div class="d-flex justify-content-center"> 
+                                            <input type="submit" id="btSalvar" value="Enviar" class="btn btn-primary"/>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div> -->
+            <div class="modal fade" id="modalCartCadastrar">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Cadastra-se</h5>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal"></button>
+                    </div>
+            
+                    <div class="modal-body">
+                        <div class="container w-75 mt-3">
+                            <div class="row card card-primary">
+                                <div class="card-header">
+                                    <h5 class="card-title float-start">Cadastre-se </h5>
+                                    <small class="text-muted float-end">Campos
+                                        marcados com (*) são de preenchimento obrigatório</small>
+                                </div>
+                                <form id="form" action="#" method="post">
+                                    <!-- -------------------------nome-------------------------------- -->
+                                    <!-- autenticacao  -->
+                                    <div id="pessoais">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="nome" class="col-form-label">Nome*</label>
+                                                <input type="text" id="nome" name="nome"
+                                                placeholder="Informe seu nome completo" class="form-control"/>
+                                            </div>
+                                            <div class="col-12 ">
+                                                <div>
+                                                    <label for="email" class="col-form-label">E-mail *</label>
+                                                    <input type="email" id="email" name="email" placeholder="exemplo@exemplo" class="email form-control"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div>
+                                                    <label for="password" class="col-form-label">Senha *</label>
+                                                    <input type="password" id="password" name="password" class="password form-control"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div>
+                                                    <label for="password" class="col-form-label">Repita a Senha *</label>
+                                                    <input type="password" id="rpassword" name="rpassword" class="rpassword form-control"/>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                        <!-- fim nome -->
+                        
+                                        <!-- --------------gênero---------------- -->
+                                        <div class="row">
+                                            <div class="col-12 col-md-4">
+                                                <label for="genero" class="col-form-label w-100">Gênero *</label>
+                                                <div class="form-check form-check-inline">
+                                                    <input id="radioM" name="radio" type="radio" class="form-check-input"/>
+                                                    <label class="form-check-label">Masculino</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input id="radioF" name="radio" type="radio" class="form-check-input"/>
+                                                    <label class="form-check-label">Feminino</label>
+                                                </div>
+                                            </div>
+                        
+                        
+                                        <!-- ----------------data de nascimento, telefone--------------- -->
+                                        <div class="row">
+                                            <div class="col-12 col-md-4">
+                                                <div>
+                                                    <label for="dtNasc" class="col-form-label">Data de Nascimento *</label>
+                                                    <input type="date" id="dtNasc" name="dtNasc" class="form-control"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div>
+                                                    <label for="tel" class="col-form-label">Telefone *</label>
+                                                    <input type="text" id="tel" name="tel" placeholder="(xx) xxxx-xxxx" class="tel form-control"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- data de nascimento, telefone -->
+                                        <div class="row my-3">
+                                            <div class="d-flex justify-content-center"> 
+                                                <input type="submit" id="btEnviar" value="Enviar" class="btn btn-primary"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="container">
@@ -238,6 +383,7 @@
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();
-        </script>      
+        </script>
+        <script src="js/validar.js"></script>      
     </body>
 </html>
